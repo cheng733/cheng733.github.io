@@ -9,7 +9,7 @@ body, html { position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: 0
 #background { position: fixed; top: 0; left: 0; z-index: -100; }
 
 </style></head>
-<body><canvas>
+<body><canvas></canvas>
 {% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
@@ -50,7 +50,7 @@ body, html { position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: 0
     </li>
     {% endif %}
 </ul>
-    {% endif %}</canvas>
+    {% endif %}
     <script  type="text/javascript" >
 window.addEventListener("load", function() {
 
